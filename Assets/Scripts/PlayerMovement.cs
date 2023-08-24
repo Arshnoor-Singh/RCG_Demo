@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        updateAnimations();
+        UpdateAnimations();
     }
 
     private void FixedUpdate()
@@ -41,9 +41,9 @@ public class PlayerMovement : MonoBehaviour
         playerRB.velocity = movementVector * moveSpeed;
     }
 
-    void updateAnimations()
+    void UpdateAnimations()
     {
-        animator.SetFloat("Horizontal", movementVector.x);
-        animator.SetFloat("Vertical", movementVector.y);
+        animator.SetFloat("Anim_Move_X", movementVector.x);
+        animator.SetFloat("Anim_Move_Y", movementVector.y);
     }
 }
