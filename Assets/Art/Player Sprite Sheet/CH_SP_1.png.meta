@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f7b88e22e83773a48a3e7b35589b1ddb
+guid: 483d0fed1bdde3542b094d951f0e203a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,96 +123,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: topDownPlayer_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 72
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f1488217872b29642b9aaba3dedb8b28
-      internalID: -1738108972
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: topDownPlayer_1
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 72
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5ce7cd194779244b95496176658e80c
-      internalID: -543096089
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: topDownPlayer_2
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 72
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7ff7d14e2dd10f24bbdefc54e6d70213
-      internalID: -163046584
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: topDownPlayer_3
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 72
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 10abc2ccc1158254483764d33e06f7b8
-      internalID: -1899773978
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: topDownPlayer_4
+      name: CH_SP_1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 48
-        width: 24
+        width: 16
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -221,19 +137,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 219f55f6027e9834ca94e8d96d8e7bc6
-      internalID: 1405919936
+      spriteID: 23d1d16ff0d30344db36f75061e1b6ee
+      internalID: 1388806874
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topDownPlayer_5
+      name: CH_SP_1_1
       rect:
         serializedVersion: 2
-        x: 24
+        x: 16
         y: 48
-        width: 24
+        width: 16
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -242,19 +158,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcef6f87742596d47bd9a5014ef7b6f1
-      internalID: 452689545
+      spriteID: f809db4e2d442a442ad6ea9beacbf165
+      internalID: -1443784227
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topDownPlayer_6
+      name: CH_SP_1_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50abb798016275a458ca7a3b03a4d87d
+      internalID: -2106187640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_SP_1_3
       rect:
         serializedVersion: 2
         x: 48
         y: 48
-        width: 24
+        width: 16
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -263,19 +200,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0480f73628f716479badf2304dd4968
-      internalID: -1799977126
+      spriteID: 75dbd594eff130749a5a7c291bf0b0c8
+      internalID: 367728745
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topDownPlayer_7
+      name: CH_SP_1_4
       rect:
         serializedVersion: 2
-        x: 72
+        x: 64
         y: 48
-        width: 24
+        width: 16
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -284,19 +221,82 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96e0bf70ff3eb55488225c606c5eed91
-      internalID: 1934419044
+      spriteID: 771997aac2614e943b59edbc4cf76b08
+      internalID: -1897036692
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topDownPlayer_8
+      name: CH_SP_1_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc95e37c5a1bb6b4a9c85fdf6a1e69ac
+      internalID: -1610167000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_SP_1_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b1cac3a7f4f0a4fbc1e514a711b4a0
+      internalID: 590882817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_SP_1_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 48
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 213ee5bb6e515914398bcf1c56648e89
+      internalID: 1541111334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_SP_1_8
       rect:
         serializedVersion: 2
         x: 0
         y: 24
-        width: 24
+        width: 16
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -305,19 +305,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 088e359bbaf3713439df3ab6b1b89c52
-      internalID: 1998732311
+      spriteID: e23d99f321593f34b99d55c22e291bae
+      internalID: 1630891329
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topDownPlayer_9
+      name: CH_SP_1_9
       rect:
         serializedVersion: 2
-        x: 24
+        x: 16
         y: 24
-        width: 24
+        width: 16
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -326,19 +326,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10cd16450fc4c1046a99c56ed6953f1c
-      internalID: -1478830434
+      spriteID: 773e3bc7510f6b14191c4fb72b2151c0
+      internalID: -2084643431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topDownPlayer_10
+      name: CH_SP_1_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 24
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b971ef847fad454c8a17d33fb8b4311
+      internalID: 1210613132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_SP_1_11
       rect:
         serializedVersion: 2
         x: 48
         y: 24
-        width: 24
+        width: 16
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -347,19 +368,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b86b5a3fa04fccb4ea6a00ad4ebf1dcc
-      internalID: 197562439
+      spriteID: 80bbd32a33344a34082e691efd38e375
+      internalID: -1075715508
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topDownPlayer_11
+      name: CH_SP_1_12
       rect:
         serializedVersion: 2
-        x: 72
+        x: 64
         y: 24
-        width: 24
+        width: 16
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -368,19 +389,82 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aaa85e50b4e03a74a837f0f5bffe2787
-      internalID: -10990808
+      spriteID: d9e1ae3b5cf2d0e458f95944f095b834
+      internalID: -983381254
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topDownPlayer_12
+      name: CH_SP_1_13
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 24
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af2eeaed98d43e4399d1dfe78925cba
+      internalID: 932864340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_SP_1_14
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 24
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a6b581e12f7bf4ca140812b52f1808
+      internalID: -928581000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_SP_1_15
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 24
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce510ff82337b7d4cad7fcaa2e25a3eb
+      internalID: 1833447920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_SP_1_16
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 24
+        width: 16
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -389,19 +473,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbbf476d541803a4fbd4453b13c13330
-      internalID: 1050573491
+      spriteID: 714ef63c8dbf2a34d97cf8dbe182e609
+      internalID: 1536116316
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topDownPlayer_13
+      name: CH_SP_1_17
       rect:
         serializedVersion: 2
-        x: 24
+        x: 16
         y: 0
-        width: 24
+        width: 16
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -410,19 +494,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60cb9f4ce34129241914d34489cd72de
-      internalID: -270029131
+      spriteID: c8b3c2276fdb191448e25e575c5ab199
+      internalID: -963126549
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topDownPlayer_14
+      name: CH_SP_1_18
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7b2c773589771b40af4d75e39fa693c
+      internalID: -1275011838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_SP_1_19
       rect:
         serializedVersion: 2
         x: 48
         y: 0
-        width: 24
+        width: 16
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -431,19 +536,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0afbf4b7181021b4fb8c89e8e834e1ff
-      internalID: -924249756
+      spriteID: 2e600a2b87f971142b9e8a0e05924e1e
+      internalID: -1537346856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topDownPlayer_15
+      name: CH_SP_1_20
       rect:
         serializedVersion: 2
-        x: 72
+        x: 64
         y: 0
-        width: 24
+        width: 16
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -452,8 +557,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f3c23be1292a424a9e6491740bc5f14
-      internalID: -1820565806
+      spriteID: 7b9f474ab6d2d664792bf54b3a93d1a0
+      internalID: 611355496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_SP_1_21
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf7e57181a21af47afaef4eb4740f8e
+      internalID: 51659803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_SP_1_22
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 252bf697344476c4bafe7e71aa7cae62
+      internalID: 744100044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_SP_1_23
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a62179b5388f82b42a07b178ae43e85d
+      internalID: -493901719
       vertices: []
       indices: 
       edges: []
@@ -469,22 +637,30 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      topDownPlayer_0: -1738108972
-      topDownPlayer_1: -543096089
-      topDownPlayer_10: 197562439
-      topDownPlayer_11: -10990808
-      topDownPlayer_12: 1050573491
-      topDownPlayer_13: -270029131
-      topDownPlayer_14: -924249756
-      topDownPlayer_15: -1820565806
-      topDownPlayer_2: -163046584
-      topDownPlayer_3: -1899773978
-      topDownPlayer_4: 1405919936
-      topDownPlayer_5: 452689545
-      topDownPlayer_6: -1799977126
-      topDownPlayer_7: 1934419044
-      topDownPlayer_8: 1998732311
-      topDownPlayer_9: -1478830434
+      CH_SP_1_0: 1388806874
+      CH_SP_1_1: -1443784227
+      CH_SP_1_10: 1210613132
+      CH_SP_1_11: -1075715508
+      CH_SP_1_12: -983381254
+      CH_SP_1_13: 932864340
+      CH_SP_1_14: -928581000
+      CH_SP_1_15: 1833447920
+      CH_SP_1_16: 1536116316
+      CH_SP_1_17: -963126549
+      CH_SP_1_18: -1275011838
+      CH_SP_1_19: -1537346856
+      CH_SP_1_2: -2106187640
+      CH_SP_1_20: 611355496
+      CH_SP_1_21: 51659803
+      CH_SP_1_22: 744100044
+      CH_SP_1_23: -493901719
+      CH_SP_1_3: 367728745
+      CH_SP_1_4: -1897036692
+      CH_SP_1_5: -1610167000
+      CH_SP_1_6: 590882817
+      CH_SP_1_7: 1541111334
+      CH_SP_1_8: 1630891329
+      CH_SP_1_9: -2084643431
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
