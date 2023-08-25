@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4956853500537516845}
   - component: {fileID: 2475741133345803290}
   - component: {fileID: 4940813160634573116}
+  - component: {fileID: 5457890313927236903}
   m_Layer: 0
   m_Name: Friend
   m_TagString: Untagged
@@ -130,3 +131,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.37, y: 0.37}
   m_EdgeRadius: 0
+--- !u!114 &5457890313927236903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4973017939334444230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a54271149590b214c92ed820b85ff7a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemNeeded: 4
+  amountNeeded: 4
