@@ -13,13 +13,14 @@ public class Friend : MonoBehaviour
         keys,
         water
     };
-
+    
     public itemType itemNeeded;
     public int amountNeeded = 4;
     private bool playerInRange;
     private bool dialogueFinished = false;
     private bool conditionsMet;
     private string itemNeededStr;
+    private string fullIntroMessage;
 
     public Light2D friendLight;
 
@@ -29,6 +30,21 @@ public class Friend : MonoBehaviour
     {
         friendLight.intensity = 0;
         itemNeededStr = itemNeeded.ToString();
+
+        switch (itemNeeded)
+        {
+            case itemType.gold:
+                fullIntroMessage = $"Friend 1: Hey! Good morning. I'm gonna get to work soon. Can you get me {amountNeeded} {itemNeededStr} for the way?";
+                break;
+            
+            case itemType.keys:
+                fullIntroMessage = $"Friend 2: Good Morning there mate! I'm on my way to start unlocking the castle. Could you please get me {amountNeeded} {itemNeededStr}? Much appreciated";
+                break;
+            
+            case itemType.water:
+                fullIntroMessage = $"Friend 3: Gosh I'm really thirsty in the mornings, could you please bring me {amountNeeded} {itemNeededStr}? Thanks!";
+                break;
+        }
     }
 
     private void Update()
@@ -87,7 +103,7 @@ public class Friend : MonoBehaviour
 
     IEnumerator DisplayDialogue(float time = 1f)
     {
-        characterReference.DisplayOnDialogueBox($"Friend: Hey! Good morning. I'm gonna get to work soon. Can you get me {amountNeeded} {itemNeededStr} for the way?", time);
+        characterReference.DisplayOnDialogueBox(fullIntroMessage, time);
         yield return new WaitForSeconds(time);
         dialogueFinished = true;
         conditionsMet = dialogueFinished && playerInRange;
