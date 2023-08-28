@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class Friend : MonoBehaviour
 {
@@ -18,9 +19,18 @@ public class Friend : MonoBehaviour
     private bool playerInRange;
     private bool dialogueFinished = false;
     private bool conditionsMet;
+    private string itemNeededStr;
+
+    public Light2D friendLight;
 
     private PlayerMovement characterReference;
-    
+
+    private void Start()
+    {
+        friendLight.intensity = 0;
+        itemNeededStr = itemNeeded.ToString();
+    }
+
     private void Update()
     {
         if (conditionsMet)
@@ -41,7 +51,6 @@ public class Friend : MonoBehaviour
                         characterReference.FriedRequestedWater(amountNeeded);
                         break;
                 }
-
                 conditionsMet = false;
             }
             else Debug.Log("Input detection condition failed");
@@ -58,6 +67,7 @@ public class Friend : MonoBehaviour
         
         if (characterReference.CompareTag("Player"))
         {
+            friendLight.intensity = 1;
             if (!dialogueFinished)
             {
                 StartCoroutine(DisplayDialogue(3f));
@@ -77,7 +87,7 @@ public class Friend : MonoBehaviour
 
     IEnumerator DisplayDialogue(float time = 1f)
     {
-        characterReference.DisplayOnDialogueBox($"Friend: Hey! Good morning. I'm gonna get to work soon. Can you get me {amountNeeded} gold for the way?", time);
+        characterReference.DisplayOnDialogueBox($"Friend: Hey! Good morning. I'm gonna get to work soon. Can you get me {amountNeeded} {itemNeededStr} for the way?", time);
         yield return new WaitForSeconds(time);
         dialogueFinished = true;
         conditionsMet = dialogueFinished && playerInRange;

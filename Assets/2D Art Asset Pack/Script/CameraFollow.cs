@@ -18,7 +18,8 @@ namespace Cainos.PixelArtTopDown_Basic
         {
             if (target == null) return;
 
-            offset = transform.position - target.position;
+            transform.position = target.transform.position;
+            offset = Vector3.zero;
         }
 
         private void Update()

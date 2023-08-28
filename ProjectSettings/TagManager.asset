@@ -41,7 +41,16 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
+  - name: Ground
+    uniqueID: 3590254993
+    locked: 0
+  - name: Above Ground Below Walls
+    uniqueID: 4249290489
+    locked: 0
+  - name: Walls
+    uniqueID: 1467612231
+    locked: 0
+  - name: Props
     uniqueID: 3451981961
     locked: 0
   - name: Interactables
@@ -49,4 +58,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3587376369
+    locked: 0
+  - name: Large Props
+    uniqueID: 4121275269
     locked: 0

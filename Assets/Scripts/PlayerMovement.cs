@@ -17,6 +17,11 @@ public class PlayerMovement : MonoBehaviour
     private int goldCount;
     private int keysCount;
     private int waterCount;
+    
+    //bool to check if resource already given
+    private bool goldGiven;
+    private bool keyGiven;
+    private bool waterGiven;
 
     //Inventory Script reference
     [SerializeField] public UI_Inventory uiInventory;
@@ -31,13 +36,17 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
+        goldGiven = false;
+        keyGiven = false;
+        waterGiven = false;
+        
         uiDialogueBox.SetActive(false);
+        DisplayOnDialogueBox("Alright then. Let's get everyone everything they need and light up the place as I go along with it", 6f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.LogWarning(goldCount);
         UpdateAnimations();
     }
     
@@ -82,14 +91,24 @@ public class PlayerMovement : MonoBehaviour
     //Function to subtract gold when requested
     public void FriedRequestedGold(int goldNeeded)
     {
-        if (goldCount-goldNeeded > 0)
+        if (!goldGiven)
         {
-            goldCount -= goldNeeded;
-            uiInventory.UpdateGoldCount(goldCount);
+            if (goldCount-goldNeeded >= 0)
+            {
+                goldCount -= goldNeeded;
+                uiInventory.UpdateGoldCount(goldCount);
+                DisplayOnDialogueBox("Friend: Thank you for the Gold!", 3f);
+                goldGiven = true;
+                AttemptToDisplayEndCondition();
+            }
+            else 
+            {
+                DisplayOnDialogueBox("Not enough Gold", 3.0f);
+            }
         }
-        else 
+        else
         {
-            DisplayOnDialogueBox("Not enough Gold", 3.0f);
+            DisplayOnDialogueBox("Friend: Hey You've already given me Gold. Thanks but I do not need more of it.", 3f);
         }
         
     }
@@ -97,29 +116,50 @@ public class PlayerMovement : MonoBehaviour
     //Function to subtract keys when requested
     public void FriedRequestedKey(int keyNeeded)
     {
-        if (keyNeeded>= keysCount)
+        if (!keyGiven)
         {
-            keysCount = keysCount - keyNeeded;
-            uiInventory.UpdateKeyCount(waterCount);
+            if (keysCount - keyNeeded >= 0)
+            {
+                keysCount -= keyNeeded;
+                uiInventory.UpdateKeyCount(waterCount);
+                DisplayOnDialogueBox("Friend: Thanks for the Key!", 3f);
+                keyGiven = true;
+                AttemptToDisplayEndCondition();
+            }
+            else if (keyNeeded < keysCount)
+            {
+                DisplayOnDialogueBox("Not enough Keys", 3.0f);
+            }
         }
-        else if (keyNeeded < keysCount)
+        else
         {
-            
+            DisplayOnDialogueBox("Friend: Hey You've already given me a Key. Thanks but I do not need more of it.", 3f);
         }
     }
     
-    //Fucntion to subtract water when requested
+    //Function to subtract water when requested
     public void FriedRequestedWater(int waterNeeded)
     {
-        if (waterNeeded>= waterCount)
+        if (!waterGiven)
         {
-            waterCount = waterCount - waterNeeded;
-            uiInventory.UpdateWaterCount(waterCount);
+            if (waterCount - waterNeeded >= 0)
+            {
+                waterCount -= waterNeeded;
+                uiInventory.UpdateWaterCount(waterCount);
+                DisplayOnDialogueBox("Friend: Hey! Thanks for the Water", 3f);
+                waterGiven = true;
+                AttemptToDisplayEndCondition();
+            }
+            else if (waterNeeded < waterCount)
+            {
+                DisplayOnDialogueBox("Not enough Water", 3.0f);
+            }
         }
-        else if (waterNeeded < waterCount)
+        else
         {
-            
+            DisplayOnDialogueBox("Friend: Hey You've already given me Water. Thanks but I do not need more of it.", 3f);
         }
+        
     }
     
     //Generic function to display something on the Dialogue Box
@@ -128,6 +168,17 @@ public class PlayerMovement : MonoBehaviour
         StartCoroutine(DisplayTextForTime(dialogueText, displayTime));
     }
 
+    //End Condition
+    private void AttemptToDisplayEndCondition()
+    {
+        bool endCondition = (goldGiven && keyGiven && waterGiven);
+
+        if (endCondition)
+        {
+            DisplayOnDialogueBox("Thank you for playing this little protoype. That's all!! Have a great rest of your day :)", 20f);
+        }
+    }
+    
     //Coroutine
     IEnumerator DisplayTextForTime(string dialogueText, float timerAmount = 1f)
     {
